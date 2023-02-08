@@ -3,6 +3,11 @@
   <head>
     <title>Ramchandra Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
+    <meta name="keywords" content="HTML CSS Javascript Ramchandra Thapa Portfolio Resume Project">
+    <meta name="description" content="Ramchandra Thapa's Portfolio, which contain Project Showcase, Resume, and other details which help you to know better him.">
+    <meta name="author" content="Ramchandra Thapa">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <script src="./script.js" defer="defer"></script>
     <link
       rel="stylesheet"
@@ -94,12 +99,12 @@
                 <td>Vidhyashram International School, Jodhpur</td>
                 <td>76.60%</td>
               </tr>
-              <tr>
+              <!-- <tr>
                 <td>2013</td>
                 <td>Tenth</td>
                 <td>Mother Memorial School, Nepal</td>
                 <td>55.63%</td>
-              </tr>
+              </tr> -->
             </tbody>
           </table>
         </article>
@@ -108,14 +113,25 @@
         <article class="projects">
           <header>Projects</header>
           <div class="project-container">
-            <div class="project-items">Project 1
+            <div class="project-items">
               <header>Project1 Name</header>
               <main>
                 <img src="/img/interviewbit.png" height="100px">
+                <summary>Project Summary</summary>
               </main>
-              <footer>Project Description</footer>
+              <footer><ul class="tag-container">
+                <li>JS</li>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Scss</li>
+              </ul></footer>
             </div>
-            <div class="project-items">Project 2</div>
+            <div class="project-items">             
+              <header>Project2 Name</header>
+              <main>
+                <img src="/img/interviewbit.png" height="100px">
+              </main>
+              <footer>Project Description</footer></div>
             <div class="project-items">Project 3</div>
             <div class="project-items">Project 4</div>
             <div class="project-items">Project 5</div>
@@ -140,20 +156,49 @@
       <section id="profile">
         <article class="profile">
           <header>Profiles</header>
-          <div><a href="https://github.com/Rcthapa1996" target="_blank"><i class="fab f target="_blank"a-github"></i>Github</a></div>
-          <div><a href="https://leetcode.com/rcthapa1996/" target="_blank"><i class="cib-leetcode"></i>Leetcode</a>
-          </div>
-          <div><a href="https://github.com/Rcthapa1996" target="_blank"><i class="fa-solid fa-square"></i>CodeSandbox</a></div>
-          <div><a href="https://www.interviewbit.com/profile/ramchandra-thapa" target="_blank">
-            <img src="./img/interviewbit.png" width="15px" alt="InterviewBit Logo"
+          <table>
+            <thead>
+              <th>Platform</th>
+              <th>Problem Solved</th>
+              <th>Ranking</th>
+              <th>Topics</th>
+              <th>View Profile</th>
+            </thead>
+            <tr>
+              
+              <td><a href="https://github.com/Rcthapa1996" target="_blank"><i class="fab f target="_blank"a-github"></i>Github</a></td>
+              <td>20 Repo</a></td>
+            </tr>
+            <tr>
+            <td><a href="https://leetcode.com/rcthapa1996/" target="_blank"><i class="cib-leetcode"></i>Leetcode</a>
+            </td>
+            <td>83 (38 easy, 39 medium, 6 hard)</td>
+            <td>253,670 / 362,085</td>
+          </tr>
+          <tr>
+
+            <td><a href="https://github.com/Rcthapa1996" target="_blank"><i class="fa-solid fa-square"></i>CodeSandbox</a></td>
+          </tr>
+          <tr>
+
+            <td><a href="https://www.interviewbit.com/profile/ramchandra-thapa" target="_blank">
+              <img src="./img/interviewbit.png" width="15px" alt="InterviewBit Logo"
               >InterviewBit</
-            ></a>
-          </div>
-          <div><a href="https://bigfrontend.dev/user/RamThapa" target="_blank">
-            <img src="./img/BFE-dev.png" width="15px" alt="InterviewBit Logo"
+              ></a>
+            </td>
+            <td>152 Problem, 20681 Score</td>
+            <td>38,475</td>
+          </tr>
+          <tr>
+            
+            <td><a href="https://bigfrontend.dev/user/RamThapa" target="_blank">
+              <img src="./img/BFE-dev.png" width="15px" alt="InterviewBit Logo"
               >BigFrontEnd.dev</
-            ></a>
-          </div>
+              ></a>
+            </td>
+            <td>21</td>
+          </tr>
+          </table>
         </article>
       </section>
       <section id="certificate">

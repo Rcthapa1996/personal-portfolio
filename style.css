@@ -63,7 +63,7 @@ table {
 }
 
 section:target header {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 section + section {
@@ -91,7 +91,7 @@ article header {
   flex-wrap: wrap;
 }
 
-.project-container div {
+.project-items {
   cursor: pointer;
   border: solid;
   border-radius: 10px;
@@ -100,6 +100,40 @@ article header {
   min-width: 100px;
   min-height: 100px;
   box-shadow: 10px 10px 10px gray;
+  background-color: aliceblue;
+  transition: 0.5s 0.2s ease-in;
+}
+.project-items:hover {
+  /* transform: rotate(10deg); */
+  /* transform: scale(1.5); */
+  /* transform: rotateY(10deg); */
+}
+
+.project-items:nth-child(odd) {
+  transform: rotate(2deg);
+}
+.project-items:nth-child(even) {
+  /* background-color: aqua; */
+  transform: rotate(-2deg);
+}
+
+.project-items:active {
+  transform: scale(0.9);
+  /* transform: rotateY(10deg); */
+}
+
+.tag-container {
+  font-size: x-small;
+  list-style-type: none;
+  gap: 10px;
+  display: flex;
+}
+
+.tag-container li {
+  border: 1px solid;
+  padding: 2px;
+  background-color: beige;
+  border-radius: 4px;
 }
 
 table th:nth-child(1),
